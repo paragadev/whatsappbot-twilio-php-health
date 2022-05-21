@@ -26,4 +26,7 @@ Such as, prescriptions, bills, reports etc.. digitally. They can be accessed by 
 
 Waiting in line at a hospital to book medical consultations and pay for them can be quite annoying. Post online registration and appointment, payments can also be done in a seamless manner over WhatsApp Bot.
 
+## What does existing solution do to help patients and care providers
+
+
 
