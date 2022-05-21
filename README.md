@@ -109,16 +109,9 @@ graph TD;
 **High level flow**
 
 ```mermaid
-
 graph TD;
-    User provides command in WhatsApp-->Webhook activated;
-    Webhook activated-->Get caller details;
-    Get caller details-->Activate workflow/state machine;
-    Activate workflow/state machine-->Progress through workflow;
-    Progress through workflow-->EMR API's;
-    EMR API's-->Workflow completed;
-    Workflow completed-->Response received in WhatsApp;
-    Response received in WhatsApp-->User provides command in WhatsApp;
+    User-provides-command-in-WhatsApp-->Webhook-activated;
+    Webhook-activated-->User-provides-command-in-WhatsApp; 
 ```
 
 
