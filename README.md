@@ -51,22 +51,63 @@ Just type: **hi hospitalcode or hello hospitalcode**. Additional activation comm
 ![Book video appointment](/assets/vdoappt1.png)
 
 
-# Solution architecture and flow
+# Solution architecture
 
 **Dependencies**
 
-- Twilio PHP SKD (composer.json) 
+- Twilio PHP SKD (composer.json). Upon running composer, twilio sdk folder should be added as part of the solution. More details on Twilio and PHP integration can be found here: https://www.twilio.com/docs/libraries/php 
 ```
 {
     "require": {
         "twilio/sdk": "^6.25"
     }
 }
+
+// After running composer, including twilio SDK files
+require_once __DIR__ . '/vendor/autoload.php';
+use Twilio\Rest\Client;
 ```
 
-- aaa
-- 
+- Memcache - to store hospital codes, details and other static information
+- Underlying EMR/HMS used by care providers. It has plug/play capabilities with any EMR and can communicate using API's. For example, see **dataadapter.php** with references to underlying API's that EMR should support.
+```
+    // Underlying EHR API endpoints
+    private $matchMobileNumberAPI = "<existing-userid-check-api-using-mobile-number>";
+    private $registerPatientAPI = "<patient-registration-api>";
+    private $patientupcomingApptAPI = "<upcoming-appointments-api>";
+    private $getDeptsByHidAPI = "<get-hospital-departments-api>";
+    private $getDocsByHidAndDeptIdAPI = "<get-hospital-department-doctors-api>";
+    private $bookAppInPersonAPI = "<book-in-person-appointment-api>";
+    private $bookApptVideoAPI = "<book-video-appointment-api>";
+    private $getHealthRecordsAPI = "get-health-records-api>";
+    private $updatePatientProfilePicAPI = "<upload-user-profile-pic-api>";
+```
+
+**Other dependencies**
+
+- This solution has a mini database of its own to manage hospitals, ongoing workflows, and additional scenario's like - managing medicine requests etc. I have used MySQL in this case. 
+
+![WhatsApp Bot Activation](/assets/table_patient_reg.png)
+
+![WhatsApp Bot Activation](/assets/table_hospitals.png)
+
+- All static messages are driven from file **messageresources.php**.
+- There are few dynamic messages that are returned from underlying EMR API endpoints.
+- It will require Twilio setup. Docs for Twilio and PHP setup can be found here: https://www.twilio.com/docs/whatsapp/quickstart/python
+
+**High level flow**
+
+```mermaid
+graph TD;
+    User provides command in WhatsApp-->Webhook activated;
+    Webhook activated-->Get caller details;
+    Get caller details-->Activate workflow/state machine;
+    Activate workflow/state machine-->Progress through workflow;
+    Progress through workflow-->EMR API's;
+    EMR API's-->Workflow completed;
+    Workflow completed-->Response received in WhatsApp;
+    Response received in WhatsApp-->User provides command in WhatsApp;
+```
 
 
-3.  
 
