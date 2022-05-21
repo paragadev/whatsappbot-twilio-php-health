@@ -104,8 +104,8 @@ graph TD;
     Get-caller-details-->Activate-workflow-state-machine;
     Activate-workflow-state-machine-->Progress-through-workflow;
     Progress-through-workflow-->Call-EMR-APIs;
-    Call-EMR-APIs-->Workflow-complets;
-    Workflow-complets-->Response-received-in-WhatsApp;
+    Call-EMR-APIs-->Workflow-completed;
+    Workflow-completed-->Response-received-in-WhatsApp;
     Response-received-in-WhatsApp-->User-provides-command-in-WhatsApp;
 ```
 
