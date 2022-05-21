@@ -87,9 +87,9 @@ use Twilio\Rest\Client;
 
 - This solution has a mini database of its own to manage hospitals, ongoing workflows, and additional scenario's like - managing medicine requests etc. I have used MySQL in this case. 
 
-![WhatsApp Bot Activation](/assets/table_patient_reg.png)
+![Patient Registration Table](/assets/table_patient_reg.png)
 
-![WhatsApp Bot Activation](/assets/table_hospitals.png)
+![Hospitals Table](/assets/table_hospitals.png)
 
 - All static messages are driven from file **messageresources.php**.
 - There are few dynamic messages that are returned from underlying EMR API endpoints.
