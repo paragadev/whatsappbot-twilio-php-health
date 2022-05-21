@@ -120,6 +120,7 @@ This solution will not work as-is. It will require:
 # Opportunity ahead ...
 1. Care providers who don't have EMR of their own, there is an opportunity to extend this solution and extend bot/admin database to hold additional details required for light weight EMR, in terms of, patient CRM, appointments, schedules, reminders etc.
 2. There is also an opportunity to integrate this with available open source EMR's.
+3. Additional scenario's for medicine delivery, lab tests etc.. can be extended.
 
 # Is it currently operational?
 Yes, it is currently operational in 50+ small hospitals and clinics and they have seen great outcomes in:
