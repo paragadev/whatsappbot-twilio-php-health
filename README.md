@@ -26,7 +26,21 @@ Such as, prescriptions, bills, reports etc.. digitally. They can be accessed by 
 
 Waiting in line at a hospital to book medical consultations and pay for them can be quite annoying. Post online registration and appointment, payments can also be done in a seamless manner over WhatsApp Bot.
 
-## What does existing solution do to help patients and care providers
+# What does existing solution do to help patients and care providers?
+
+Existing solution enables care providers such as small hospitals, clinics or even individual doctors to deliver patient experience over WhatsApp in terms of:
+1. Online registration - in case of first visit
+2. Profile update such as Photo and Address.
+3. Online appointment
+4. In person appointment
+5. Viewing health record history
+6. Viewing upcoming appointments
+
+In addition to above capabilities, it provides additional endpoints which care providers EMR/HMS can leverage to send various types of information back to patient WhatsApp. They could reminders related to appointment, billing, medicines or general followup with patients to keep the engagement going.
+
+Below are few snapshots for reference:
+
+
 
 
 
