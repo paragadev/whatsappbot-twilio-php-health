@@ -115,7 +115,7 @@ graph TD;
 This solution will not work as-is. It will require:
 1. Twilio setup. You can first start with Twilio sandbox and by configuring webhook.
 2. MySql or some other relational database setup. Atleast one hospital entry in hospital domain table.
-3. Underlying EMR and required API's. You can mock the response and get the WhatsApp bot up and running though for demonstration purposes though.
+3. Underlying EMR and required API's. However you can mock the response and get the WhatsApp bot up and running for demonstration purposes.
 
 # Opportunity ahead ...
 1. Care providers who don't have EMR of their own, there is an opportunity to extend this solution and extend bot/admin database to hold additional details required for light weight EMR, in terms of, patient CRM, appointments, schedules, reminders etc.
