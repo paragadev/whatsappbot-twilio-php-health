@@ -29,7 +29,7 @@ Waiting in line at a hospital to book medical consultations and pay for them can
 # What does existing solution do to help patients and care providers?
 
 Existing solution enables care providers such as small hospitals, clinics or even individual doctors to deliver patient experience over WhatsApp in terms of:
-1. Online registration - in case of first visit
+1. Online registration
 2. Profile update such as Photo and Address.
 3. Online appointment
 4. In person appointment
@@ -38,7 +38,10 @@ Existing solution enables care providers such as small hospitals, clinics or eve
 
 In addition to above capabilities, it provides additional endpoints which care providers EMR/HMS can leverage to send various types of information back to patient WhatsApp. They could reminders related to appointment, billing, medicines or general followup with patients to keep the engagement going.
 
-Below are few snapshots for reference:
+**Activating services of a given care provider**
+
+Just type: **hi hospitalcode or hello hospitalcode**. Additional activation commands can be introduced. Service is designed in a way where, a given care provider has multiple locations, each location can be managed separately and can be activated through assigned code by just typing hi hospitalcode.
+
 
 
 
