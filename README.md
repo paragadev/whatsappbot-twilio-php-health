@@ -111,5 +111,18 @@ graph TD;
     Response-received-in-WhatsApp-->User-provides-command-in-WhatsApp;
 ```
 
+# Please remember
+This solution will not work as-is. It will require:
+1. Twilio setup. You can first start with Twilio sandbox and by configuring webhook.
+2. MySql or some other relational database setup. Atleast one hospital entry in hospital domain table.
+3. Underlying EMR and required API's. You can mock the response and get the WhatsApp bot up and running though for demonstration purposes though.
 
+# Opportunity ahead ...
+1. Care providers who don't have EMR of their own, there is an opportunity to extend this solution and extend bot/admin database to hold additional details required for light weight EMR, in terms of, patient CRM, appointments, schedules, reminders etc.
+2. There is also an opportunity to integrate this with available open source EMR's.
 
+# Is it currently operational?
+Yes, it is currently operational in 50+ small hospitals and clinics and they have seen great outcomes in:
+1. Reducing registration/appointment physical queues.
+2. Increased use of video appointments.
+3. Enhanced patient engagement.
