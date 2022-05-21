@@ -95,9 +95,21 @@ use Twilio\Rest\Client;
 - There are few dynamic messages that are returned from underlying EMR API endpoints.
 - It will require Twilio setup. Docs for Twilio and PHP setup can be found here: https://www.twilio.com/docs/whatsapp/quickstart/python
 
+
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 **High level flow**
 
 ```mermaid
+
 graph TD;
     User provides command in WhatsApp-->Webhook activated;
     Webhook activated-->Get caller details;
