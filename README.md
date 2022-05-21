@@ -40,11 +40,14 @@ In addition to above capabilities, it provides additional endpoints which care p
 
 **Activating services of a given care provider**
 
-Just type: **hi hospitalcode or hello hospitalcode**. Additional activation commands can be introduced. Service is designed in a way where, a given care provider has multiple locations, each location can be managed separately and can be activated through assigned code by just typing hi hospitalcode.
+Just type: **hi hospitalcode or hello hospitalcode**. Additional activation commands can be introduced. Service is designed in a way, where a given care provider has multiple locations, each location can be managed separately and can be activated through assigned code by just typing hi hospitalcode.
 
 ![WhatsApp Bot Activation](/assets/hi-activation.png)
 
 
 
+**Video appointment booking workflow**
+
+![Book video appointment](/assets/vdoappt1.png)
 
 
