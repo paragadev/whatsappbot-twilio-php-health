@@ -83,6 +83,7 @@ use Twilio\Rest\Client;
     private $updatePatientProfilePicAPI = "<upload-user-profile-pic-api>";
 ```
 
+
 **Other dependencies**
 
 - This solution has a mini database of its own to manage hospitals, ongoing workflows, and additional scenario's like - managing medicine requests etc. I have used MySQL in this case. 
@@ -94,6 +95,7 @@ use Twilio\Rest\Client;
 - All static messages are driven from file **messageresources.php**.
 - There are few dynamic messages that are returned from underlying EMR API endpoints.
 - It will require Twilio setup. Docs for Twilio and PHP setup can be found here: https://www.twilio.com/docs/whatsapp/quickstart/python
+
 
 **High level flow**
 
