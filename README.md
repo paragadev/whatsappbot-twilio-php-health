@@ -51,3 +51,22 @@ Just type: **hi hospitalcode or hello hospitalcode**. Additional activation comm
 ![Book video appointment](/assets/vdoappt1.png)
 
 
+# Solution architecture and flow
+
+**Dependencies**
+
+- Twilio PHP SKD (composer.json) 
+```
+{
+    "require": {
+        "twilio/sdk": "^6.25"
+    }
+}
+```
+
+- aaa
+- 
+
+
+3.  
+
