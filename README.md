@@ -128,7 +128,7 @@ This solution will not work as-is. It will require:
 3. Additional scenario's for medicine delivery, lab tests etc.. can be extended.
 
 # Is it currently operational?
-Yes, it is currently operational in 50+ small hospitals and clinics and they have seen great outcomes in:
-1. Reducing registration/appointment physical queues.
+Yes, it is currently operational in 50+ small hospitals and clinics with great outcomes:
+1. Reduced registration/appointment physical queues.
 2. Increased use of video appointments.
 3. Enhanced patient engagement.
