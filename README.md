@@ -51,6 +51,11 @@ Just type: **hi hospitalcode or hello hospitalcode**. Additional activation comm
 ![Book video appointment](/assets/vdoappt1.png)
 
 
+**Reminders - Feedback example**
+
+![Feedback](/assets/reminders.jpg)
+
+
 # Solution architecture
 
 **Dependencies**
